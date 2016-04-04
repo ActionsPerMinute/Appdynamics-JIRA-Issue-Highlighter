@@ -1,0 +1,24 @@
+{
+  "name": "JIRA Issue Highlighter",
+  "version": "0.2.0",
+  "description": "Highlight JIRA Issue Summary Text",
+  "permissions": ["storage", "https://singularity.jira.com/rest/*", "contextMenus"],
+  "background": {
+    "persistent": false,
+    "scripts": ["dist/background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["https://docs.appdynamics.com/display/PRO41/*"],
+    "js": ["vendor/jquery/dist/jquery.js", "vendor/jquery/dist/jquery.highlight.js", "vendor/jquery/dist/jquery-ui.min.js", "dist/script.js"],
+    "css": ["dist/style.css"]
+  }],
+  "icons": {
+    "128": "img/icon-128.png"
+  },
+  "manifest_version": 2,
+  "options_page": "dist/options.html",
+  "options_ui": {
+    "page": "dist/options.html",
+    "chrome_style": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "JIRA-Issue-Highlighter",
+  "version": "0.1.0",
+  "authors": [
+    "Ben Balter <ben.balter@github.com>"
+    "Toby Davies <toby.davies@appdynamics.com>"
+  ],
+  "description": "Highlight JIRA Issue keywords",
+  "main": "script.js",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
